@@ -223,7 +223,7 @@ function App() {
                 </div>
                 <div className="flex items-center">
                   <label htmlFor="firstDate" className="min-w-[10rem]">
-                    7/9/2025:
+                    4/9/2025:
                   </label>
                   <select
                     name="firstDate"
@@ -237,7 +237,7 @@ function App() {
                 </div>
                 <div className="flex items-center">
                   <label htmlFor="secondDate" className="min-w-[10rem]">
-                    14/9/2025:
+                    11/9/2025:
                   </label>
                   <select
                     name="secondDate"
@@ -251,7 +251,7 @@ function App() {
                 </div>
                 <div className="flex items-center">
                   <label htmlFor="thirdDate" className="min-w-[10rem]">
-                    21/9/2025:
+                    18/9/2025:
                   </label>
                   <select
                     name="thirdDate"
@@ -265,7 +265,7 @@ function App() {
                 </div>
                 <div className="flex items-center">
                   <label htmlFor="fourthDate" className="min-w-[10rem]">
-                    28/9/2025:
+                    25/9/2025:
                   </label>
                   <select
                     name="fourthDate"
@@ -329,7 +329,7 @@ function App() {
             </div>
             <div className="flex items-center">
               <label htmlFor="firstDate" className="min-w-[10rem]">
-                7/9/2025:
+                4/9/2025:
               </label>
               <select
                 name="firstDate"
@@ -343,7 +343,7 @@ function App() {
             </div>
             <div className="flex items-center">
               <label htmlFor="secondDate" className="min-w-[10rem]">
-                14/9/2025:
+                11/9/2025:
               </label>
               <select
                 name="secondDate"
@@ -357,7 +357,7 @@ function App() {
             </div>
             <div className="flex items-center">
               <label htmlFor="thirdDate" className="min-w-[10rem]">
-                21/9/2025:
+                18/9/2025:
               </label>
               <select
                 name="thirdDate"
@@ -371,7 +371,7 @@ function App() {
             </div>
             <div className="flex items-center">
               <label htmlFor="fourthDate" className="min-w-[10rem]">
-                28/9/2025:
+                25/9/2025:
               </label>
               <select
                 name="fourthDate"
