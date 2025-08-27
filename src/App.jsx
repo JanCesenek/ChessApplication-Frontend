@@ -394,7 +394,7 @@ function App() {
           </div>
         </div>
         <div className="flex flex-col justify-center items-center border border-white p-10 rounded-md shadow-lg shadow-white [&>*]:my-5">
-          <h1 className="text-[2rem] font-bold underline">Seznam hráčů pro termín 7.9:</h1>
+          <h1 className="text-[2rem] font-bold underline">Seznam hráčů pro termín 4.9:</h1>
           {firstTermPlayers?.length > 0 ? (
             firstTermPlayers?.map((player) => {
               return (
@@ -426,7 +426,7 @@ function App() {
           </h2>
         </div>
         <div className="flex flex-col justify-center items-center border border-white p-10 rounded-md shadow-lg shadow-white [&>*]:my-5">
-          <h1 className="text-[2rem] font-bold underline">Seznam hráčů pro termín 14.9:</h1>
+          <h1 className="text-[2rem] font-bold underline">Seznam hráčů pro termín 11.9:</h1>
           {secondTermPlayers?.length > 0 ? (
             secondTermPlayers?.map((player) => {
               return (
@@ -458,7 +458,7 @@ function App() {
           </h2>
         </div>
         <div className="flex flex-col justify-center items-center border border-white p-10 rounded-md shadow-lg shadow-white [&>*]:my-5">
-          <h1 className="text-[2rem] font-bold underline">Seznam hráčů pro termín 21.9:</h1>
+          <h1 className="text-[2rem] font-bold underline">Seznam hráčů pro termín 18.9:</h1>
           {thirdTermPlayers?.length > 0 ? (
             thirdTermPlayers?.map((player) => {
               return (
@@ -490,7 +490,7 @@ function App() {
           </h2>
         </div>
         <div className="flex flex-col justify-center items-center border border-white p-10 rounded-md shadow-lg shadow-white [&>*]:my-5">
-          <h1 className="text-[2rem] font-bold underline">Seznam hráčů pro termín 28.9:</h1>
+          <h1 className="text-[2rem] font-bold underline">Seznam hráčů pro termín 25.9:</h1>
           {fourthTermPlayers?.length > 0 ? (
             fourthTermPlayers?.map((player) => {
               return (
