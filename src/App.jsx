@@ -181,7 +181,7 @@ function App() {
     (editSpec.firstDate || editSpec.secondDate || editSpec.thirdDate || editSpec.fourthDate);
 
   return (
-    <div className="bg-black text-white min-h-screen flex justify-center items-center">
+    <div className="text-white min-h-screen flex justify-center items-center">
       <div className="flex flex-col justify-center items-center [&>*]:my-10">
         {admin ? (
           <FaLock className="hover:cursor-pointer" onClick={() => setAdmin(false)} />
@@ -296,7 +296,7 @@ function App() {
             </div>
           </div>
         )}
-        <div className="border border-white rounded-md p-10 flex flex-col [&>*]:my-3 shadow-lg shadow-white">
+        <div className="border border-white rounded-md p-10 flex flex-col [&>*]:my-3 shadow-lg shadow-white bg-black/80">
           <h1 className="font-bold text-[3rem]">Chrudimské září - přihláška</h1>
           <div className="flex flex-col text-[1.6rem] [&>*]:my-3">
             <div className="flex items-center">
@@ -393,14 +393,14 @@ function App() {
             </button>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center border border-white p-10 rounded-md shadow-lg shadow-white [&>*]:my-5">
-          <h1 className="text-[2rem] font-bold underline">Seznam hráčů pro termín 4.9:</h1>
+        <div className="flex flex-col justify-center items-center border border-white p-10 rounded-md shadow-lg shadow-white [&>*]:my-2 bg-black/80">
+          <h1 className="text-[2rem] !my-10 font-bold underline">Seznam hráčů pro termín 4.9:</h1>
           {firstTermPlayers?.length > 0 ? (
             firstTermPlayers?.map((player) => {
               return (
                 <div
                   key={player.id}
-                  className="flex items-center border border-white rounded-md p-4 [&>*]:mx-2">
+                  className="flex justify-between items-center border border-white rounded-md p-4 [&>*]:mx-2 min-w-[20rem]">
                   <div>{player.name}</div>
                   <div>{player.rating}</div>
                   {admin && (
@@ -425,14 +425,14 @@ function App() {
             Počet volných míst: {32 - firstTermPlayers?.length}
           </h2>
         </div>
-        <div className="flex flex-col justify-center items-center border border-white p-10 rounded-md shadow-lg shadow-white [&>*]:my-5">
-          <h1 className="text-[2rem] font-bold underline">Seznam hráčů pro termín 11.9:</h1>
+        <div className="flex flex-col justify-center items-center border border-white p-10 rounded-md shadow-lg shadow-white [&>*]:my-2 bg-black/80">
+          <h1 className="text-[2rem] !my-10 font-bold underline">Seznam hráčů pro termín 11.9:</h1>
           {secondTermPlayers?.length > 0 ? (
             secondTermPlayers?.map((player) => {
               return (
                 <div
                   key={player.id}
-                  className="flex items-center border border-white rounded-md p-4 [&>*]:mx-2">
+                  className="flex justify-between items-center border border-white rounded-md p-4 [&>*]:mx-2 min-w-[20rem]">
                   <div>{player.name}</div>
                   <div>{player.rating}</div>
                   {admin && (
@@ -457,14 +457,14 @@ function App() {
             Počet volných míst: {32 - secondTermPlayers?.length}
           </h2>
         </div>
-        <div className="flex flex-col justify-center items-center border border-white p-10 rounded-md shadow-lg shadow-white [&>*]:my-5">
-          <h1 className="text-[2rem] font-bold underline">Seznam hráčů pro termín 18.9:</h1>
+        <div className="flex flex-col justify-center items-center border border-white p-10 rounded-md shadow-lg shadow-white [&>*]:my-2 bg-black/80">
+          <h1 className="text-[2rem] !my-10 font-bold underline">Seznam hráčů pro termín 18.9:</h1>
           {thirdTermPlayers?.length > 0 ? (
             thirdTermPlayers?.map((player) => {
               return (
                 <div
                   key={player.id}
-                  className="flex items-center border border-white rounded-md p-4 [&>*]:mx-2">
+                  className="flex justify-between items-center border border-white rounded-md p-4 [&>*]:mx-2 min-w-[20rem]">
                   <div>{player.name}</div>
                   <div>{player.rating}</div>
                   {admin && (
@@ -489,14 +489,14 @@ function App() {
             Počet volných míst: {32 - thirdTermPlayers?.length}
           </h2>
         </div>
-        <div className="flex flex-col justify-center items-center border border-white p-10 rounded-md shadow-lg shadow-white [&>*]:my-5">
-          <h1 className="text-[2rem] font-bold underline">Seznam hráčů pro termín 25.9:</h1>
+        <div className="flex flex-col justify-center items-center border border-white p-10 rounded-md shadow-lg shadow-white [&>*]:my-2 bg-black/80">
+          <h1 className="text-[2rem] !my-10 font-bold underline">Seznam hráčů pro termín 25.9:</h1>
           {fourthTermPlayers?.length > 0 ? (
             fourthTermPlayers?.map((player) => {
               return (
                 <div
                   key={player.id}
-                  className="flex items-center border border-white rounded-md p-4 [&>*]:mx-2">
+                  className="flex justify-between items-center border border-white rounded-md p-4 [&>*]:mx-2 min-w-[20rem]">
                   <div>{player.name}</div>
                   <div>{player.rating}</div>
                   {admin && (
