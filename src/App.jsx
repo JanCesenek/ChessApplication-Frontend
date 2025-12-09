@@ -115,7 +115,7 @@ function App() {
     const postReqPayload = {
       name: playerSpec.name,
       rating: Number(playerSpec.rating),
-      firstDate: playerSpec.firstDate === "true" ? true : false,
+      firstDate: true,
       secondDate: playerSpec.secondDate === "true" ? true : false,
       thirdDate: playerSpec.thirdDate === "true" ? true : false,
       fourthDate: playerSpec.fourthDate === "true" ? true : false,
