@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { MdEdit, MdDelete } from "react-icons/md";
 import { FaLock, FaUnlock } from "react-icons/fa";
 import { api } from "./core/api";
@@ -12,7 +12,7 @@ function App() {
   const [playerSpec, setPlayerSpec] = useState({
     name: "",
     rating: 1000,
-    firstDate: false,
+    firstDate: true,
     secondDate: false,
     thirdDate: false,
     fourthDate: false,
@@ -22,7 +22,7 @@ function App() {
     id: 0,
     name: "",
     rating: 1000,
-    firstDate: false,
+    firstDate: true,
     secondDate: false,
     thirdDate: false,
     fourthDate: false,
@@ -78,7 +78,7 @@ function App() {
     const patchReqPayload = {
       name: editSpec.name,
       rating: Number(editSpec.rating),
-      firstDate: editSpec.firstDate === "true" || editSpec.firstDate === true ? true : false,
+      firstDate: true,
       secondDate: editSpec.secondDate === "true" || editSpec.secondDate === true ? true : false,
       thirdDate: editSpec.thirdDate === "true" || editSpec.thirdDate === true ? true : false,
       fourthDate: editSpec.fourthDate === "true" || editSpec.fourthDate === true ? true : false,
@@ -103,7 +103,7 @@ function App() {
       id: 0,
       name: "",
       rating: 1000,
-      firstDate: false,
+      firstDate: true,
       secondDate: false,
       thirdDate: false,
       fourthDate: false,
@@ -161,9 +161,9 @@ function App() {
   };
 
   const firstTermPlayers = data?.filter((player) => player.firstDate);
-  const secondTermPlayers = data?.filter((player) => player.secondDate);
-  const thirdTermPlayers = data?.filter((player) => player.thirdDate);
-  const fourthTermPlayers = data?.filter((player) => player.fourthDate);
+  // const secondTermPlayers = data?.filter((player) => player.secondDate);
+  // const thirdTermPlayers = data?.filter((player) => player.thirdDate);
+  // const fourthTermPlayers = data?.filter((player) => player.fourthDate);
 
   const validForm =
     playerSpec.name &&
@@ -221,7 +221,7 @@ function App() {
                     onChange={handleEditChange}
                   />
                 </div>
-                <div className="flex items-center">
+                {/* <div className="flex items-center">
                   <label htmlFor="firstDate" className="min-w-[10rem]">
                     4/9/2025:
                   </label>
@@ -276,7 +276,7 @@ function App() {
                     <option value={false}>Ne</option>
                     <option value={true}>Ano</option>
                   </select>
-                </div>
+                </div> */}
                 <div className="flex self-center items-center [&>*]:mx-5">
                   <button
                     className={`border border-white p-5 bg-transparent rounded-md self-center hover:bg-white hover:text-black shadow-md shadow-white ${
@@ -297,7 +297,7 @@ function App() {
           </div>
         )}
         <div className="border border-white rounded-md p-10 flex flex-col [&>*]:my-3 shadow-lg shadow-white bg-black/80">
-          <h1 className="font-bold text-[3rem]">Chrudimské září - přihláška</h1>
+          <h1 className="font-bold text-[3rem]">Předvánoční hraní 18.12 - přihláška</h1>
           <div className="flex flex-col text-[1.6rem] [&>*]:my-3">
             <div className="flex items-center">
               <label htmlFor="name" className="min-w-[10rem]">
@@ -327,7 +327,7 @@ function App() {
                 onChange={handleChange}
               />
             </div>
-            <div className="flex items-center">
+            {/* <div className="flex items-center">
               <label htmlFor="firstDate" className="min-w-[10rem]">
                 4/9/2025:
               </label>
@@ -382,7 +382,7 @@ function App() {
                 <option value={false}>Ne</option>
                 <option value={true}>Ano</option>
               </select>
-            </div>
+            </div> */}
             <button
               className={`border border-white p-5 bg-transparent rounded-md self-center hover:bg-white hover:text-black shadow-md shadow-white ${
                 (!validForm || submitting) && "opacity-50 cursor-not-allowed"
@@ -394,7 +394,7 @@ function App() {
           </div>
         </div>
         <div className="flex flex-col justify-center items-center border border-white p-10 rounded-md shadow-lg shadow-white [&>*]:my-2 bg-black/80">
-          <h1 className="text-[2rem] !my-10 font-bold underline">Seznam hráčů pro termín 4.9:</h1>
+          <h1 className="text-[2rem] !my-10 font-bold underline">Seznam hráčů:</h1>
           {firstTermPlayers?.length > 0 ? (
             firstTermPlayers?.map((player) => {
               return (
@@ -425,7 +425,7 @@ function App() {
             Počet volných míst: {32 - firstTermPlayers?.length}
           </h2>
         </div>
-        <div className="flex flex-col justify-center items-center border border-white p-10 rounded-md shadow-lg shadow-white [&>*]:my-2 bg-black/80">
+        {/* <div className="flex flex-col justify-center items-center border border-white p-10 rounded-md shadow-lg shadow-white [&>*]:my-2 bg-black/80">
           <h1 className="text-[2rem] !my-10 font-bold underline">Seznam hráčů pro termín 11.9:</h1>
           {secondTermPlayers?.length > 0 ? (
             secondTermPlayers?.map((player) => {
@@ -520,7 +520,7 @@ function App() {
           <h2 className="text-[1rem] italic">
             Počet volných míst: {32 - fourthTermPlayers?.length}
           </h2>
-        </div>
+        </div> */}
       </div>
     </div>
   );
